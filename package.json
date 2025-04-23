@@ -1,0 +1,42 @@
+{
+  "name": "@xingzhiwei/request-lib",
+  "version": "1.0.1",
+  "description": "A modular, extensible HTTP request library for business applications",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc && rollup -c",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "http",
+    "request",
+    "axios",
+    "fetch",
+    "typescript"
+  ],
+  "author": "xAI",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "spark-md5": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/spark-md5": "^3.0.4",
+    "jest": "^29.7.0",
+    "rollup": "^4.13.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.3"
+  },
+  "files": [
+    "dist",
+    "cli"
+  ],
+  "bin": {
+    "request-templet-cli": "cli/index.js"
+  }
+}
