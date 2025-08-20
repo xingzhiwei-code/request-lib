@@ -1,0 +1,24 @@
+{
+  "endpoints": {
+    "article": {
+      "publishArticle": {
+        "path": "/api/article",
+        "description": "发布文章",
+        "method": "POST",
+        "auth": true,
+        "idempotent": true,
+        "cache": false,
+        "pager": false
+      },
+      "getArticles": {
+        "path": "/api/article",
+        "description": "获取文章",
+        "method": "GET",
+        "auth": false,
+        "idempotent": false,
+        "cache": false,
+        "pager": true
+      }
+    }
+  }
+}
